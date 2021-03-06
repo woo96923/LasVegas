@@ -133,8 +133,8 @@
     <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\LobbyManager.cs" />
-    <Compile Include="Assets\Scripts\PUN\GameManager.cs" />
     <Compile Include="Assets\Scripts\PUN\Launcher.cs" />
+    <Compile Include="Assets\Scripts\PUN\PlayerAnimatorManager.cs" />
     <Compile Include="Assets\Scripts\PUN\PlayerNameInputField.cs" />
     <Compile Include="Assets\Scripts\RayScript.cs" />
     <Compile Include="Assets\Scripts\boxDiceCheck.cs" />

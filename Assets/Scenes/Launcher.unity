@@ -936,8 +936,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc3f689a0a9c9d478faa1f81f492843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlPanel: {fileID: 0}
-  progressLabel: {fileID: 0}
+  controlPanel: {fileID: 992015478}
+  progressLabel: {fileID: 635481417}
 --- !u!1 &2113299870
 GameObject:
   m_ObjectHideFlags: 0

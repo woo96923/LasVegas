@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Scripting.APIUpdating;
+using UnityEngine;
+using Photon.Pun;
+using Photon.Realtime;
 
-public class playerColtroler : MonoBehaviour
+public class playerColtroler : MonoBehaviourPunCallbacks
 {
     [SerializeField]
     private float walkSpeed;
@@ -31,11 +34,16 @@ public class playerColtroler : MonoBehaviour
     {
         
         myRigid = GetComponent<Rigidbody>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (photonView.IsMine == false && PhotonNetwork.IsConnected == true)
+        {
+            return;
+        }
         Move();
         CameraRotation();
         CharacterRotation();
